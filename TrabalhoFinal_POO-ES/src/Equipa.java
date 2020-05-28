@@ -7,7 +7,7 @@ import java.util.List;
 
 public class Equipa {
 	/**
-	 * A class </strong> Equipa </strong> disponibliza os atributos, metodos e funções necessários à criação de um Equipa
+	 * A class </strong> Equipa </strong> disponibliza os atributos, métodos e funções necessários à criação de um Equipa
 	 * @author João Carlos
 	 * @author Francisco Esteves
 	 * @version 1.0
@@ -19,7 +19,7 @@ public class Equipa {
     // =======================================================
 
 	/**
-	 *</strong>codigo</strong> recebe o codigo da equipa
+	 *</strong>codigo</strong> recebe o código da equipa
 	 *</strong>nome</strong> recebe o nome da equipa
 	 *</strong>escalao</strong> recebe o escalão da equipa
 	 *</strong> List<Jogador> recebe a lista de jogadores
@@ -32,16 +32,17 @@ public class Equipa {
 	private List <Jogador> jogador = new ArrayList<Jogador>();
 	private List <Treinador> treinador = new ArrayList<Treinador>();
 	
-//Adicionar o add codigo para dps poder validar nesta e nas outras classes que peçam codigo
+//Adicionar o add código para depois poder validar nesta e nas outras classes que peçam código
 	
 	
     // =======================================================
     // ============ ACESSORES e MODIFICADORES ===============
     // =======================================================
 
+	/**
+	 * Conjunto de Acessores e Modificadores que permitem atribuir um valor ao atributo, conseguindo obtê-lo em qualquer lugar
+	 */
 
-
-   
 	public int getCodigo() {
 		return codigo;
 	}
@@ -105,8 +106,8 @@ public class Equipa {
 
 	/**
 	 * Função que permite remover um jogador
-	 * Esta função esta dependete da validação do numero de cartao de cidadão do jogador
-	 * @param cartaoCidadao (int) parametro inteiro que recebe o numero de cartao de cidadão fornecido pelo utilizador
+	 * Esta função esta dependete da validação do número de cartão de cidadão do jogador
+	 * @param cartaoCidadao (int) parametro inteiro que recebe o número de cartão de cidadão fornecido pelo utilizador
 	 * @return jogador (Jogador) retorna a lista de jogadores
 	 */
 	protected List<Jogador> removerJogador (int cartaoCidadao) {
@@ -125,8 +126,8 @@ public class Equipa {
 	
 	/**
 	 *  Função que permite remover um treinador
-	 * Esta função esta dependete da validação do numero de cartao de cidadão do treinador
-	 * @param cartaoCidadao (int) parametro inteiro que recebe o numero de cartao de cidadão fornecido pelo utilizador
+	 * Esta função esta dependete da validação do número de cartão de cidadão do treinador
+	 * @param cartaoCidadao (int) parâmetro inteiro que recebe o número de cartão de cidadão fornecido pelo utilizador
 	 * @return jogador (Jogador) retorna a lista de treinadores
 	 */
 	
@@ -145,10 +146,11 @@ public class Equipa {
 		}
 
 /**
- * Este metodo permite alterar uma jogador, através do fornecimento do numero do cartão de cidadão
- * @param nCartaoCidadao (int) numero do cartão de cidadão do jogador que pretendemos alterar
+ * Este método permite alterar um jogador, através do fornecimento do número do cartão de cidadão
+ * @param nCartaoCidadao (int) número do cartão de cidadão do jogador que pretendemos alterar
  * @param jogadorAposAlteracao (Jogador) jogador que pretendemos implementar no clube após a alteração.
  */
+	
 	public void alterarJogador(int nCartaoCidadao, Jogador jogadorAposAlteracao) {
 	    Jogador jogadorAlterado = new Jogador();
 
@@ -161,8 +163,8 @@ public class Equipa {
         this.jogador.set(index, jogadorAposAlteracao);
 	}
 	/**
-	 * Este metodo permite alterar uma Treinador, através do fornecimento do numero do cartão de cidadão
-	 * @param nCartaoCidadao (int) numero do cartão de cidadão do treinador que pretendemos alterar
+	 * Este método permite alterar uma Treinador, através do fornecimento do número do cartão de cidadão
+	 * @param nCartaoCidadao (int) número do cartão de cidadão do treinador que pretendemos alterar
 	 * @param treinadorAposAlteracao (Treinador) treinador que pretendemos implementar no clube após a alteração.
 	 */
 	public void alterarTreinador(int nCartaoCidadao, Treinador treinadorAposAlteracao) {
@@ -182,7 +184,7 @@ public class Equipa {
 	
 	/**
 	 * Esta função serve de complento às funções </strong>alterarJogador</strong> e </strong>addjogador</strong>  
-	 * @param nCartaoCidadao (int) parametro inteiro que vai ser um elemento de validação
+	 * @param nCartaoCidadao (int) parâmetro inteiro que vai ser um elemento de validação
 	 * @return jogador (Jogador) 
 	 */
 			
@@ -197,7 +199,7 @@ public class Equipa {
 		}
 	/**
 	 * Esta função serve de complento às funções </strong>alterarTreinador</strong> e </strong>addTreinador</strong>  
-	 * @param nCartaoCidadao (int) parametro inteiro que vai ser um elemento de validação
+	 * @param nCartaoCidadao (int) parâmetro inteiro que vai ser um elemento de validação
 	 * @return treinador (Treinador) 
 	 */
 	protected Treinador getCartaoCidadaoTreinador (int nCartaoCidadao) {
@@ -212,7 +214,7 @@ public class Equipa {
 
 	/**
 	 * Função que permite adicionar um jogador à equipa.
-	 * Se o por erro tentarmos adicionar um jogador com um numero de cartão já existente, a função não permite que isso aconteça
+	 * Se por erro tentarmos adicionar um jogador com um número de cartão já existente, a função não permite que isso aconteça
 	 * @param jogador (Jogador) 
 	 */
 	public void addJogador (Jogador jogador) {
@@ -233,7 +235,7 @@ public class Equipa {
 	
 	/**
 	 * Função que permite adicionar um treinador à equipa.
-	 * Se o por erro tentarmos adicionar um treinador com um numero de cartão já existente, a função não permite que isso aconteça
+	 * Se por erro tentarmos adicionar um treinador com um número de cartão já existente, a função não permite que isso aconteça
 	 * @param treinador (Treinador) 
 	 */
 	public void addTreinador (Treinador treinador) {
@@ -255,7 +257,7 @@ public class Equipa {
 	//por fazer
 	public void ordenarJogadores() {
 		
-	}
+}
 	//-----------------//
 	
     // =======================================================
@@ -264,7 +266,9 @@ public class Equipa {
 
     // ----> toString()
 
-
+	/**
+	 * Este método permite vizualizar os valores dos atributos na class </strong>main</strong>
+	 */
 
 	@Override
 	public String toString() {

@@ -19,6 +19,7 @@ public abstract class Pessoa {
 	 * </strong>contacto</strong> recebe o contacto da pessoa
 	 * </strong>email</strong> recebe o email da pessoa
 	 */
+	
 	private int nCartaoCidadao;
 	private String nome;
 	private Date dataNascimento;
@@ -35,6 +36,7 @@ public abstract class Pessoa {
 	/**
 	 * Conjunto de Acessores e Modificadores que permitem atribuir um valor ao atributo, conseguindo obtê-lo em qualquer lugar
 	 */
+	
 	public int getnCartaoCidadao() {
 		return nCartaoCidadao;
 	}
