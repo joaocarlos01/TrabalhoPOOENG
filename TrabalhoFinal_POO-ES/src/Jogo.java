@@ -23,9 +23,9 @@ public class Jogo {
 	 * </strong> golosEquipaVisitante</strong> recebe o número de golos da equipa visitante
 	 * </strong> data </strong> recebe a data do jogo
 	 * </strong> jornada </strong> recebe a jornada do campeonato
-	 * </strong> codigo </strong> recebe o codigo identificador do jogo
+	 * </strong> codigo </strong> recebe o código identificador do jogo
 	 * </strong> List <Arbitro> </strong> recebe a lista de arbitros
-	 * </strong> List <Equipa> </strong> recebe a lista de aequipas
+	 * </strong> List <Equipa> </strong> recebe a lista de equipas
 	 */
 	private Equipa equipaVisitada;
 	private Equipa equipaVisitante;
@@ -43,6 +43,10 @@ public class Jogo {
     // ============ ACESSORES e MODIFICADORES ===============
     // =======================================================
 
+	/**
+	 * Conjunto de Acessores e Modificadores que permitem atribuir um valor ao atributo, conseguindo obtê-lo em qualquer lugar
+	 */
+	
 	public int getCodigo() {
 		return codigo;
 	}
@@ -138,9 +142,9 @@ public class Jogo {
 
 	
 /**
- * Função que permite remover um árbitro do jogo, através do seu numero de cartão de cidadão
- * @param cartaoCidadao (int) parametro inteiro que vai ser um elemento de validação
- * @return arbiro (Arbitro) arbitros que fazem parte do jogo
+ * Função que permite remover um árbitro do jogo, através do seu número de cartão de cidadão
+ * @param cartaoCidadao (int) parâmetro inteiro que vai ser um elemento de validação
+ * @return arbitro (Arbitro Árbitros que fazem parte do jogo
  */
 	protected List<Arbitro> removerArbitro (int cartaoCidadao) {
 		
@@ -157,9 +161,9 @@ public class Jogo {
 		}
 	
 	/**
-	 * Função que permite adicionar um arbitro ao jogo.
-	 * Se o por erro tentarmos adicionar um arbitro com um numero de cartão já existente, a função não permite que isso aconteça
-	 * @param arbitro (Arbitro) 
+	 * Função que permite adicionar um árbitro ao jogo.
+	 * Se o por erro tentarmos adicionar um arbitro com um número de cartão já existente, a função não permite que isso aconteça
+	 * @param arbitro (Arbitro) Árbito que pretendemos adicionar ao jogo.
 	 */
 	public void addArbitro(Arbitro arbitro) {
 		Arbitro cartaoArbitro = this.getnCartaoArbitro(arbitro.getnCartaoCidadao());
@@ -171,10 +175,10 @@ public class Jogo {
 		this.arbitro.add(arbitro);
 	}
 	/**
-	 * Função que permite alterar um arbitro do jogo
-	 * Esta alteração está dependente da validação do numero de cartão de cidadão
-	 * @param nCartaoCidadao (int) parametro inteiro que vai ser um elemento de validação
-	 * @param arbitroAposAlteracao (Arbitro) Alterações a serem efetuadas ao arbitro após a validação
+	 * Função que permite alterar um árbitro do jogo
+	 * Esta alteração está dependente da validação do número do cartão de cidadão
+	 * @param nCartaoCidadao (int) parâmetro inteiro que vai ser um elemento de validação
+	 * @param arbitroAposAlteracao (Arbitro) Alterações a serem efetuadas ao árbitro após a validação
 	 */
 	//por testar
 	public void alterarArbitro(int nCartaoCidadao, Arbitro arbitroAposAlteracao) {
@@ -194,7 +198,7 @@ public class Jogo {
 	
 	/**
 	 * Esta função serve de complento às funções </strong>alterarArbitro</strong> e </strong>addArbitro</strong>
-	 * @param nCartao (int) parametro inteiro que vai ser um elemento de validação
+	 * @param nCartao (int) parâmetro inteiro que vai ser um elemento de validação
 	 * @return
 	 */
 			
@@ -223,10 +227,10 @@ public class Jogo {
 	
 	
 	/**
-	 * Função que permite remover golo da equipa visitada
-	 * Esta função está dependente da validação do codigo da equipa que vai ter golos removidos
-	 * @param golosARemover (int) parametro inteiro que fornece o numero de golos a remover
-	 * @param codigo (int) parametro inteiro que fornece o codigo da equipa
+	 * Função que permite remover golos os da equipa visitada
+	 * Esta função está dependente da validação do código da equipa que vai ter os golos removidos
+	 * @param golosARemover (int) parâmetro inteiro que fornece o número de golos a remover
+	 * @param codigo (int) parâmetro inteiro que fornece o código da equipa
 	 * @return
 	 */
 	//por testar
@@ -243,10 +247,10 @@ public class Jogo {
 	}
 	
 	/**
-	 * Função que permite remover golo da equipa visitante
-	 * Esta função está dependente da validação do codigo da equipa que vai ter golos removidos
-	 * @param golosARemover (int) parametro inteiro que fornece o numero de golos a remover
-	 * @param codigo (int) parametro inteiro que fornece o codigo da equipa
+	 * Função que permite remover os golos da equipa visitante
+	 * Esta função está dependente da validação do código da equipa que vai ter os golos removidos
+	 * @param golosARemover (int) parâmetro inteiro que fornece o número de golos a remover
+	 * @param codigo (int) parâmetro inteiro que fornece o código da equipa
 	 * @return
 	 */
 	//por testar
@@ -278,6 +282,10 @@ public class Jogo {
 
     // ----> toString()
 
+	/**
+	 * Este método permite vizualizar os valores dos atributos na class </strong>main</strong>
+	 */
+	
 	@Override
 	public String toString() {
 		return "Jogo [equipaVisitada=" + equipaVisitada + ", equipaVisitante=" + equipaVisitante

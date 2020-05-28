@@ -35,6 +35,7 @@ public abstract class Pessoa {
 	/**
 	 * Conjunto de Acessores e Modificadores que permitem atribuir um valor ao atributo, conseguindo obtê-lo em qualquer lugar
 	 */
+	
 	public int getnCartaoCidadao() {
 		return nCartaoCidadao;
 	}

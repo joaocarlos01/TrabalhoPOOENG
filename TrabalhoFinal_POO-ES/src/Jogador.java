@@ -26,6 +26,7 @@ public class Jogador extends Pessoa {
 	/**
 	 * Conjunto de Acessores e Modificadores que permitem atribuir um valor ao atributo, conseguindo obtê-lo em qualquer lugar
 	 */
+	
 	public String getPosicao() {
 		return posicao;
 	}

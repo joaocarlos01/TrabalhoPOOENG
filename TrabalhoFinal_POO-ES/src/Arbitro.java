@@ -46,6 +46,7 @@ public class Arbitro extends Pessoa {
 	/**
 	 * Este método permite vizualizar os valores dos atributos na class </strong>main</strong>
 	 */
+	
 	@Override
 	public String toString() {
 		return "Árbitro" + "\r\n" + "Cartão de Cidadão: " + getnCartaoCidadao() + "\r\n" + "Nome: " + getNome()

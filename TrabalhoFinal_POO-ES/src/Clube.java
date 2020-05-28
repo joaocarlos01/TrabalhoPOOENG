@@ -15,18 +15,17 @@ public class Clube {
 	 * @author Francisco Esteves
 	 * @version 1.0
 	 * @since 07/05/2020
-	 * 
 	 */
 	
 	/**
-	 * </strong> codigo </strong> recebe o codigo do clube
+	 * </strong> codigo </strong> recebe o código do clube
 	 * </strong> nome </strong>  recebe o nome do clube
-	 * </strong> dataFormacao </strong> recebe a data de formação do clube
+	 * </strong> dataFormacao </strong> recebe a data da formação do clube
 	 * </strong> corEquipamento</strong> recebe a cor do equipamento do clube
 	 * </strong> contacto </strong> recebe o contacto do clube
 	 * </strong> email </strong> recebe o email do clube
 	 * </strong> morada </strong> recebe a morada do clube
-	 * </strong> List <Equipa> </strong> recebe a lista de equipas
+	 * </strong> List <Equipa> </strong> recebe a lista das equipas
 	 */
 	private int codigo;
 	private String nome;
@@ -42,6 +41,10 @@ public class Clube {
     // ============ ACESSORES e MODIFICADORES ===============
     // =======================================================
 
+	/**
+	 * Conjunto de Acessores e Modificadores que permitem atribuir um valor ao atributo, conseguindo obtê-lo em qualquer lugar
+	 */
+	
 	public int getCodigo() {
 		return codigo;
 	}
@@ -116,9 +119,9 @@ public class Clube {
 
 	
 	/**
-	 * Este metodo permite alterar uma equipa, através do fornecimento do seu codigo.
+	 * Este método permite alterar uma equipa, através do fornecimento do seu código.
 	 * @param equipaAposAlteracao (Equipa) equipa que irá substituir a equipa anterior
-	 * @param codigo (int) codigo identificador da equipa que pretendemos remover.
+	 * @param codigo (int) código identificador da equipa que pretendemos remover.
 	 */
 	public void alterarEquipa (Equipa equipaAposAlteracao, int codigo) {
 	    Equipa equipaAlterada = new Equipa();
@@ -133,8 +136,8 @@ public class Clube {
 	}
 		
 	/**
-	 * Este metodo permite remover uma equipa através do fornecimento do seu codigo.
-	 * @param codigo (int) codigo identificador da equipa que pretendemos remover.
+	 * Este método permite remover uma equipa através do fornecimento do seu código.
+	 * @param codigo (int) código identificador da equipa que pretendemos remover.
 	 * @return  equipa (Equipa) irá retornar a lista de equipas já alterada.
 	 */
 	protected List<Equipa> removerEquipa (int codigo) {
@@ -151,8 +154,8 @@ public class Clube {
 		}
 		
 	/**
-		 * Este método irá fornecer o numero total de treinadores inscritos no clube.
-		 * @return numeroTotalTreinador (int) retorna o numero total de treinadores do clube.
+		 * Este método irá fornecer o número total de treinadores inscritos no clube.
+		 * @return numeroTotalTreinador (int) retorna o número total de treinadores do clube.
 		 */
 	public int nTotalTreinador () {
 		int numeroTotalTreinador = 0;
@@ -166,8 +169,8 @@ public class Clube {
 		return numeroTotalTreinador;
 	}
 		/**
-		 * Este método irá fornecer o numero total de jogadores inscritos no clube.
-		 * @return numeroTotalJogadores (int) retorna o numero total de jogadores do clube.
+		 * Este método irá fornecer o número total de jogadores inscritos no clube.
+		 * @return numeroTotalJogadores (int) retorna o número total de jogadores do clube.
 		 */
 	public int nTotalJogador () {
 		int numeroTotalJogadores = 0;
@@ -181,7 +184,7 @@ public class Clube {
 		return numeroTotalJogadores;
 	}
 		/**
-		 * 	Metodo complementar para a obtenção do codigo dos códigos das equipas
+		 * 	Método complementar para a obtenção do código dos códigos das equipas
 		 * @param codigo (int)
 		 * @return equipa (Equipa)
 		 */
@@ -195,8 +198,8 @@ public class Clube {
 		return null;
 		}
 	/**
-	 * Este metodo adiciona equipas ao clube, mediante algumas excessões.
-	 * Não podem existir equipas com o mesmo codigo, sendo necessário, pelo menos, um jogador e treinador por equipa.
+	 * Este método adiciona equipas ao clube, mediante algumas excessões.
+	 * Não podem existir equipas com o mesmo código, sendo necessário, pelo menos, um jogador e treinador por equipa.
 	 * @param equipa(Equipa) equipa que pretendemos adicionar ao clube
 	 */
 	public void addEquipa (Equipa equipa) {
@@ -236,6 +239,10 @@ public class Clube {
 
     // ----> toString()
 
+	/**
+	 * Este método permite vizualizar os valores dos atributos na class </strong>main</strong>
+	 */
+	
 	@Override
 	public String toString() {
 		return "Clube" + "\r\n"+ "Codigo: " + codigo + "\r\n"+ "Nome: " + nome + "\r\n" + "Formacao: " + dataFormacao + "\r\n"+ "Cor do Equipamento: "

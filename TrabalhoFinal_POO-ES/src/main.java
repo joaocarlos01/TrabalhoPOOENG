@@ -24,7 +24,7 @@ public class main {
 			Equipa equipa2 = new Equipa();
 			Equipa equipa3 = new Equipa();
 			jogador1.setnCartaoCidadao(20);
-			jogador1.setNome("Alex");
+			jogador1.setNome("Bernado");
 			
 			equipa1.setCodigo(20);
 			equipa1.setNome("AtaWaweawa");
@@ -41,12 +41,12 @@ public class main {
 			clube.addEquipa(equipa1);
 			Jogo jogo = new Jogo();
 			Jogo jogo2 = new Jogo();
-			equipa3.setEscalao("tytruryry");
+			equipa3.setEscalao("Júnior");
 			equipa3.setCodigo(252);
 			Competicao competicao = new Competicao();
-			competicao.setEscalao("Séniores");
 			competicao.addEquipa(equipa1);
 			competicao.addEquipa(equipa3);
+			competicao.setEscalao("Júnior");
 			clube.alterarEquipa(equipa3, 21);
 			equipa1.ordenarJogadores();
 		
