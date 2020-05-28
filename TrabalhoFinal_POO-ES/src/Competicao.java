@@ -187,6 +187,7 @@ public class Competicao {
 	 * @param codigo (int) código identificador do jogo que pretendemos remover.
 	 */
 
+	
 	public void alterarJogo (int codigo, Jogo jogoAposAlteracao) {
 		   Jogo jogoAlterado = new Jogo();
 

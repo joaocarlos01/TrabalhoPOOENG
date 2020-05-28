@@ -27,6 +27,7 @@ public class Jogo {
 	 * </strong> List <Arbitro> </strong> recebe a lista de arbitros
 	 * </strong> List <Equipa> </strong> recebe a lista de equipas
 	 */
+	
 	private Equipa equipaVisitada;
 	private Equipa equipaVisitante;
 	private int golosEquipaVisitada;

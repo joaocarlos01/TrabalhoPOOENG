@@ -3,7 +3,6 @@ public class Arbitro extends Pessoa {
 	// =======================================================
     // ===================== ATRIBUTOS =======================
     // =======================================================
-
 /**
  * A class </strong> Arbitro </strong> herda da class </strong>Pessoa</strong>.
  * @author João Carlos

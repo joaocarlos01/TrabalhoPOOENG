@@ -44,8 +44,8 @@ public class main {
 			equipa3.setEscalao("Júnior");
 			equipa3.setCodigo(252);
 			Competicao competicao = new Competicao();
-			competicao.addEquipa(equipa1);
 			competicao.addEquipa(equipa3);
+			competicao.addEquipa(equipa1);
 			competicao.setEscalao("Júnior");
 			clube.alterarEquipa(equipa3, 21);
 			equipa1.ordenarJogadores();

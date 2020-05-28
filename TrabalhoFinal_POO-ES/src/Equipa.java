@@ -150,6 +150,7 @@ public class Equipa {
  * @param nCartaoCidadao (int) número do cartão de cidadão do jogador que pretendemos alterar
  * @param jogadorAposAlteracao (Jogador) jogador que pretendemos implementar no clube após a alteração.
  */
+	
 	public void alterarJogador(int nCartaoCidadao, Jogador jogadorAposAlteracao) {
 	    Jogador jogadorAlterado = new Jogador();
 

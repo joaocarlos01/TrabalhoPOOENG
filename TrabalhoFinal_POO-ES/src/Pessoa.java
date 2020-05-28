@@ -19,6 +19,7 @@ public abstract class Pessoa {
 	 * </strong>contacto</strong> recebe o contacto da pessoa
 	 * </strong>email</strong> recebe o email da pessoa
 	 */
+	
 	private int nCartaoCidadao;
 	private String nome;
 	private Date dataNascimento;

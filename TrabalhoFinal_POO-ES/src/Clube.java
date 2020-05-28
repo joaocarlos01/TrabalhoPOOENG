@@ -197,6 +197,7 @@ public class Clube {
 		}
 		return null;
 		}
+	
 	/**
 	 * Este método adiciona equipas ao clube, mediante algumas excessões.
 	 * Não podem existir equipas com o mesmo código, sendo necessário, pelo menos, um jogador e treinador por equipa.

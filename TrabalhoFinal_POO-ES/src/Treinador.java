@@ -51,7 +51,6 @@ public class Treinador extends Pessoa {
 	/**
 	 * Este método permite vizualizar os valores dos atributos na class </strong>main</strong>
 	 */
-	
 	@Override
 	public String toString() {
 		return "Treinador" + "\r\n" + "Cartão de Cidadão: " + getnCartaoCidadao() + "\r\n" + "Nome: " + getNome()
