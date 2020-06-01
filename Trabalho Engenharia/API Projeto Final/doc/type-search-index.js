@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"com.joaocarlos.exception","l":"EscalaoException"},{"p":"com.joaocarlos.exception","l":"NumeroCartaoDuplicado"},{"p":"com.joaocarlos.exception","l":"NumeroDuplicadoexception"}]
